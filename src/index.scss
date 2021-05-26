@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.test {
+  width: 750px;
+  height: 30px;
+  background-color: pink;
+  display: flex;
+  backface-visibility: hidden;
+}

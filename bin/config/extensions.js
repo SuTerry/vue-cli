@@ -1,2 +1,2 @@
 
-module.exports = ['.ts', '.vue']
+module.exports = ['.ts', '.vue', '.js']

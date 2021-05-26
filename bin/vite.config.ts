@@ -9,8 +9,8 @@ const extensions = require('./config/extensions')
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
-    // alias,
-    // extensions,
+    alias,
+    extensions,
   },
   plugins: [
     vue(),

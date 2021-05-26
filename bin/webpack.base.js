@@ -30,7 +30,7 @@ const commonCssLoader = [
         ]
       }
     }
-  }
+  },
 ]
 
 const rules = [
@@ -49,10 +49,10 @@ const rules = [
     exclude: '/node_modules/'
   },
   {
-    test: /\.less$/,
+    test: /\.(sa|sc)ss$/,
     use: [
       ...commonCssLoader,
-      'less-loader'
+      'sass-loader'
     ],
     exclude: '/node_modules/'
   },
@@ -181,4 +181,15 @@ module.exports = {
     },
     chunkIds: 'named',
   },
+  performance: {
+    hints:'warning',
+    //入口起点的最大体积
+    maxEntrypointSize: 1024*300, // 300K
+    //生成文件的最大体积
+    // maxAssetSize: 1024*300, // 300K
+    //只给出 js 文件的性能提示
+    // assetFilter: function(assetFilename) {
+    //   return assetFilename.endsWith('.js')
+    // }
+  }
 }
