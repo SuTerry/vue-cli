@@ -1,11 +1,10 @@
 <template>
   <div class="test">
-    {{ test }}
+    {{test}}
   </div>
 </template>
 
 <script lang="ts">
-
 import './index.scss'
 
 import { defineComponent } from 'vue'
